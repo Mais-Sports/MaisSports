@@ -9,12 +9,16 @@
     --cor-bar: #23232e;
     --cor-fundo: #72008fbd;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width:100vh;
+    width: 100%;
+    background: var(--cor-fundo) center center;
+    background-size: cover;
 }
+
 
 a {
     color: var(--cor-fonte);
@@ -42,8 +46,6 @@ nav {
 }
 
 main {
-    background: var(--cor-fundo) center center;
-    background-size: cover;
     height: 92vh
 }
 
@@ -69,8 +71,38 @@ main {
     margin: 8px;
     transition: 0.3s;
 }
+div .slide{
+    position: absolute;
+}
+
 .content{
-    height
+    height: 480px;
+    width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    display: flex;
+}
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cor-fonte);
+    margin: 6px;
+    border-radius: pointer;
+    transform: .5s ease;
+}
+
+.bar:hover{
+    background-color: var(--cor-fonte);
 }
 
 

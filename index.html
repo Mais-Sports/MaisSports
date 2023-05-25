@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Index CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="style.css" type="text/css">
     <title>+Sports</title>
 </head>
 
@@ -25,14 +28,60 @@
                 <li><a href="/">Favoritos</a></li>
                 <li><a href="/">Login</a></li>
                 <li><a href="/">Cadastro</a></li>
+
+                <li class="limob"><a href="/">Inicio</a></li>
+                <li class="limob"><a href="/">Carrinho</a></li>
+                <li class="limob"><a href="/">Favoritos</a></li>
+                <li class="limob"><a href="/">Login</a></li>
+                <li class="limob"><a href="/">Cadastro</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/img1.jpg" alt="" class="image">
+                <div class="image-date">
+                    <span class="text">
+                        <h2>Nike Kyrie Infinity. <br>
+                            Já disponível no nosso site.</h2>
+                    </span>
+                    <a href="#" class="button">Veja mais.</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
         
-        <script src="script.js"></script>
-    </main>
-   
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <!-- Menu Nav JS -->
+        <script src="js/script.js"></script>
+
+    </section>
+
+
+
+
 
 
 </body>

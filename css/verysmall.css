@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 534px) {
     body {
         overflow-x: hidden;
     }
@@ -23,7 +23,7 @@
         letter-spacing: 1px;
         margin-left: 32px;
     }
-    
+
 
     .nav-list li {
         margin-left: 0;
@@ -91,8 +91,32 @@
         opacity: 0.7;
         color: var(--cor-fonte);
         background-color: #161c3bf7;
-        
+
     }
+}
+
+.time-line {
+    width: 90vh;
+    display: flex;
+    overflow: ;
+    
+}
+
+div .image {
+    width: 100px;
+    height: 100px;
+}
+
+div .cards #product-1 {
+    margin-left: 50px;
+}
+
+div .cards #product-2 {
+    margin-left: 50px;
+}
+
+div .cards #product-3 {
+    margin-left:50px;
 }
 
 

@@ -23,7 +23,7 @@
         letter-spacing: 1px;
         margin-left: 32px;
     }
-    
+
 
     .nav-list li {
         margin-left: 0;
@@ -57,6 +57,7 @@
     .slide .image {
         height: 100%;
         width: 100%;
+        margin-left: 0;
         object-fit: cover;
 
     }
@@ -91,7 +92,20 @@
         opacity: 0.7;
         color: var(--cor-fonte);
         background-color: #161c3bf7;
-        
+
+    }
+
+    .cards {
+        margin-left: 0;
+    }
+
+    .cards .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .span-color {
+        color: rgb(255, 61, 168);
     }
 }
 

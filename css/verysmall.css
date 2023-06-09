@@ -120,11 +120,7 @@
         font-size: 15px;
     }
 
-    .categ{
-        width: 300px;
-        height: 500px;
-        background-color: var(--cor-bar);
-    }
+
 
     .span-color {
         color: rgb(255, 61, 168);

@@ -70,3 +70,8 @@
     font-size: 14px;
     font-weight: 600;
 }
+@media screen and (min-width: 320px){
+    .center-text h2{
+        font-size: 18px;
+    }
+}

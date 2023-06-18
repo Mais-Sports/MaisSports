@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 :root {
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
@@ -13,7 +17,7 @@ section {
 
 .main-home {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-image: url(https://imgnike-a.akamaihd.net/1920x1920/01692115.jpg);
     background-position: right;
     background-size: cover;
@@ -83,4 +87,15 @@ section {
     background-color: var(--cor-bar);
     color: var(--cor-fonte);
     transition: all .42s ease;
+}
+@media screen and (min-width: 320px){
+    .main-text{
+        margin-top: -25rem;
+    }
+
+    .main-text h1 {
+        font-size: 35px;
+        overflow-y: hidden;
+    }
+
 }

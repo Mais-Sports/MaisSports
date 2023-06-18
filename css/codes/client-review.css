@@ -1,0 +1,41 @@
+:root {
+    --cor-fonte: #FFFF;
+    --cor-fonte2: #000;
+    --cor-fonte3: #c70074d2;
+    --cor-bar: #23232e;
+    --cor-fundo: #f80091bd;
+
+}
+.client-reviews {
+    background-color: #eeeeee;
+}
+.reviews{
+    text-align: center;
+}
+.reviews h3{
+    color: var(--cor-fonte2);
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.reviews p{
+    color: #707070;
+    font-size:16px ;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.reviews h2{
+    font-size: 22px;
+    color: var(--cor-fonte2);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}

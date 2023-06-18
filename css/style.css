@@ -5,14 +5,17 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
 :root {
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
+    --cor-fonte3: #c70074d2;
     --cor-bar: #23232e;
     --cor-fundo: #f80091bd;
+
 }
 
 body {
@@ -20,8 +23,13 @@ body {
     padding: 0;
 }
 
+.span-color {
+    color: rgb(255, 61, 168);
+}
 
-a.stro{
+
+
+a.stro {
     color: var(--cor-fonte);
     text-decoration: none;
     transition: 0.3s;
@@ -76,49 +84,4 @@ nav {
 
 nav .limob {
     display: none;
-}
-
-section{
-    padding: 5% 10%;
-}
-.main-home{
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/img2.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
-
-
-a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--cor-bar);
-    color: var(--cor-fonte);
-    transition: all 0.3s ease;
-}
-
-a .button:hover {
-    color: #FFFF;
-    background-color: #1d1c46;
-
-}
-.time-line {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-div .image{
-    width: 350px;
-    height: 350px;
-}
-div .cards #product-1{
-    margin-left:100px;
-}
-div .cards #product-2{
-    margin-left:100px;
-}
-div .cards #product-3{
-    margin-left:100px;
 }

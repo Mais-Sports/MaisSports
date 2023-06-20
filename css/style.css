@@ -24,17 +24,19 @@ body {
 }
 
 
- /* campo de busca */
+/* campo de busca */
 
- .box-2{
+.box-2 {
     display: none;
 }
-.box{
-    
+
+.box {
+
     width: 100%;
     max-width: 400px;
 }
-.box .search-box{
+
+.box .search-box {
     overflow: hidden;
     position: relative;
     height: 45px;
@@ -42,15 +44,16 @@ body {
     margin: auto;
     left: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.075)75;
-    border-radius: 25px; 
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
+
 /*
 #check:checked ~ .search-box{
     max-width: 380px;
 
 }*/
-.search-box input{
+.search-box input {
     overflow: hidden;
     position: absolute;
     height: 100%;
@@ -62,6 +65,7 @@ body {
     padding: 20px;
     font-size: 18px;
 }
+
 .search-box .icon {
     overflow: hidden;
     position: absolute;
@@ -76,6 +80,7 @@ body {
     line-height: 50px;
     border-radius: 25px;
 }
+
 /*
 #check:checked ~ .search-box .icon{
     background-color: var(--cor-bar);
@@ -84,7 +89,11 @@ body {
     width: 60px;
 
 }*/
-#check{
+#check {
+    display: none;
+}
+
+.sacola {
     display: none;
 }
 
@@ -98,9 +107,34 @@ body {
 
 /* Inicio Barra Lateral */
 a.stro {
+    color: var(--cor-fonte);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 27px;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    display: flex;
+}
+.login{
     color: var(--cor-fonte2);
     text-decoration: none;
     transition: 0.3s;
+    font-size: 40px;
+    display: flex;
+    background: var(--cor-fonte);
+    border-radius: 35px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    right: 0;
+    left: 5px;
+    margin: 15px 51px;
+    justify-content: space-between;
+    width: 200px;
+    
+}
+li .stro2 {
+    color: black;
 }
 
 a.stro:hover {
@@ -120,6 +154,7 @@ a.logo:hover {
 }
 
 nav {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -146,11 +181,13 @@ nav {
     width: 32px;
     height: 2px;
     background: var(--cor-fonte2);
-    margin: 8px;
+    margin: 8px 10px;
     transition: 0.3s;
 }
 
 nav .limob {
     display: none;
+    color: var(--cor-fonte);
 }
+
 /* Fim Barra Lateral */

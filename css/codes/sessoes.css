@@ -90,12 +90,25 @@ section {
 }
 @media screen and (min-width: 320px){
     .main-text{
-        margin-top: -25rem;
+        margin-top: -20rem;
     }
 
     .main-text h1 {
         font-size: 35px;
         overflow-y: hidden;
     }
+    .main-btn {
+        top: 10rem;
+        display: inline-block;
+        color: var(--cor-fonte2);
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        border: 2px solid var(--cor-fonte2);
+        padding: 12px 25px;
+        transition: all .42s ease;
+    
+    }
+
 
 }

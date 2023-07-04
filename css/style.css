@@ -23,6 +23,9 @@ body {
     padding: 0;
 }
 
+.heart {
+    display: none;
+}
 
 /* campo de busca */
 
@@ -107,32 +110,15 @@ body {
 
 /* Inicio Barra Lateral */
 a.stro {
-    color: var(--cor-fonte);
+    color: var(--cor-fonte2);
     text-decoration: none;
     transition: 0.3s;
-    font-size: 27px;
+    font-size: 20px;
     margin-left: 25px;
     letter-spacing: 2px;
     display: flex;
 }
-.login{
-    color: var(--cor-fonte2);
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 40px;
-    display: flex;
-    background: var(--cor-fonte);
-    border-radius: 35px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    right: 0;
-    left: 5px;
-    margin: 15px 51px;
-    justify-content: space-between;
-    width: 200px;
-    
-}
+
 li .stro2 {
     color: black;
 }

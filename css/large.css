@@ -2,7 +2,9 @@
     body {
         overflow-x: hidden;
     }
-    
+     .heart {
+        display: none;
+     }
     .box .search-box{
         position: relative;
         height: 45px;

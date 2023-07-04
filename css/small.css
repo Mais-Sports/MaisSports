@@ -2,6 +2,13 @@
     body {
         overflow-x: hidden;
     }
+    .heart {
+        display: block;
+     }
+     .heart i {
+        height: 50px;
+        width: 50px;
+     }
 
     .search-box input {
         font-size: 12px;
@@ -68,12 +75,27 @@
         transition: all 0.3s ease;
         font-size: 15px;
     }
+    .login{
+        color: var(--cor-fonte);
+        padding: 5px 15px 5px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 25px;
+        display: flex;
+        background: var(--cor-fundo2);
+        border-radius: 35px;
+        align-items: center;
+        text-align: center;
+        margin-left: 25px;
+        letter-spacing: 2px;
+        width: 150px;
+    }
 
     a.button:hover {
         opacity: 0.7;
         color: var(--cor-fonte);
         background-color: #161c3bf7;
-        ;
+        
     }
 
 }

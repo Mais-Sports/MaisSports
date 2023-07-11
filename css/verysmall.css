@@ -172,6 +172,62 @@ li .stro2 {
 .span-color {
     color: rgb(255, 61, 168);
 }
+.pow .categ-btn {
+    text-align: center;
+    overflow-y: hidden;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 114px;
+    height: 30px;
+    margin-top: 5rem;
+    margin-left: 0.8rem;
+    color: var(--cor-fonte);
+    font-size: 12px;
+    border: 2px solid var(--cor-fonte);
+    padding: 8px 15px;
+    transition: all .42s ease;
+
+}
+
+.pow .categ-btn:hover {
+    background-color: var(--cor-fonte);
+    color: var(--cor-fonte2);
+}
+
+.pow .locais-btn i{
+    vertical-align: middle;
+}
+.pow .locais-btn {
+    text-align: center;
+    overflow-y: hidden;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 114px;
+    height: 30px;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    color: var(--cor-fonte);
+    font-size: 12px;
+    border: 2px solid var(--cor-fonte);
+    padding: 8px 15px;
+    transition: all .42s ease;
+
+}
+
+.pow .locais-btn:hover {
+    background-color: var(--cor-fonte);
+    color: var(--cor-fonte2);
+}
+
+.pow .locais-btn i{
+    vertical-align: middle;
+}
 
 
 

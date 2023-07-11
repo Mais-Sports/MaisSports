@@ -23,8 +23,17 @@ body {
     padding: 0;
 }
 
-.heart {
-    display: none;
+.fav i {
+    margin-top: 0px;
+    display: inline-block;
+    color: red;
+    font-size: 25px;
+}
+
+
+.logo img {
+    width: 130px;
+
 }
 
 /* campo de busca */
@@ -121,6 +130,7 @@ a.stro {
 
 li .stro2 {
     color: black;
+
 }
 
 a.stro:hover {

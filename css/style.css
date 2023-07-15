@@ -185,5 +185,7 @@ nav .limob {
     display: none;
     color: var(--cor-fonte);
 }
-
+section{
+    padding: 6% 10% 1% 10%;
+}
 /* Fim Barra Lateral */

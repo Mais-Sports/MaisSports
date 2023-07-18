@@ -149,14 +149,14 @@ li .stro2 {
     display: none;
 }
 
-.login {
+.login-bar {
     color: var(--cor-fonte);
     padding: 5px 15px 5px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 25px;
     display: flex;
-    background: var(--cor-fundo2);
+    background: #d12089;
     border-radius: 35px;
     align-items: center;
     text-align: center;

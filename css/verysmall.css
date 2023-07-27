@@ -210,8 +210,8 @@ li .stro2 {
     left: 0;
     width: 114px;
     height: 30px;
-    margin-top: 2rem;
-    margin-left: 8rem;
+    margin-top: 0;
+    margin-left: 1rem;
     color: var(--cor-fonte);
     font-size: 12px;
     border: 2px solid var(--cor-fonte);

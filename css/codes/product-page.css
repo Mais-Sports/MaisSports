@@ -1,0 +1,39 @@
+:root {
+    --cor-fonte: #FFFF;
+    --cor-fonte2: #000;
+    --cor-fonte3: #c70074d2;
+    --cor-bar: #f5f5f5;
+    --cor-fundo: #f80091bd;
+
+}
+
+
+h1 .title-cart {
+    color: var(--cor-fonte2);
+    font-size: 38px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.cart {
+    display: flex;
+    width: 155vh;
+    height: 100vh;
+    background-color: var(--cor-bar);
+    border-radius: 10px;
+    padding: 35px;
+}
+.container-product{
+    overflow: hidden;
+    transition: all .40s;
+}
+.container-product .container{
+    overflow: hidden;
+}
+
+.product-cart img{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    transition: all .40s;
+}

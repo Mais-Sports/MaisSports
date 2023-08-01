@@ -27,6 +27,23 @@ class MobileNavbar {
     } else {
       this.navList.style.display = "none";
     }
+
+    const pinkElement = document.querySelector(".pink");
+    if (this.navList.classList.contains(this.activeClass)) {
+      this.navList.style.display = "block";
+      pinkElement.style.display = "block";// Exibe o elemento pink quando o navList está ativo
+
+      // Ocultar o overflow da página quando o navList está ativo
+      document.body.style.overflow = "hidden";
+
+    } else {
+      this.navList.style.display = "none";
+      pinkElement.style.display = "none"; // Oculta o elemento pink quando o navList não está ativo
+
+      // Restaurar o overflow da página quando o navList não está ativo
+      document.body.style.overflow = "auto";
+    }
+
   }
 
   addClickEvent() {
@@ -47,4 +64,3 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
-

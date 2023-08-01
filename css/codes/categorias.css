@@ -1,4 +1,3 @@
-
 :root {
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
@@ -7,24 +6,28 @@
     --cor-fundo: #f80091bd;
 
 }
-.categs{
+
+.categs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 2rem;
     margin: 0, 0, 0;
 }
-.categories h2{
+
+.categories h2 {
     color: var(--cor-fonte2);
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 30px;
 }
-.pow{
+
+.pow {
     position: relative;
     transition: all .40s;
 }
-.pow img{
+
+.pow img {
     width: 100%;
     height: auto;
     transition: all .40s;
@@ -41,7 +44,7 @@
     left: 0;
     width: 160px;
     height: 40px;
-    margin-top: 9rem;
+    margin-top: 15rem;
     margin-left: 2rem;
     color: var(--cor-fonte);
     font-size: 16px;
@@ -56,9 +59,10 @@
     color: var(--cor-fonte2);
 }
 
-.pow .locais-btn i{
+.pow .locais-btn i {
     vertical-align: middle;
 }
+
 .pow .locais-btn {
     text-align: center;
     overflow-y: hidden;
@@ -84,22 +88,153 @@
     color: var(--cor-fonte2);
 }
 
-.pow .locais-btn i{
+.pow .locais-btn i {
     vertical-align: middle;
 }
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 420px) {
     .pow .locais-btn {
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 160px;
+        width: 140px;
         height: 40px;
-        margin-top: 1.5rem;
-        margin-left: 9rem;
-        font-size: 16px;
-        padding: 8px 15px;
-        transition: all .42s ease;
-    
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 12px;
+    }
+
+    .pow .categ-btn {
+        width: 140px;
+        height: 40px;
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 12px;
     }
 }
+
+@media screen and (min-width: 421px)and (max-width: 458px) {
+    .pow .locais-btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+
+    .pow .categ-btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 6.5rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 459px)and (max-width: 535px) {
+    .pow .locais-btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+
+    .pow .categ-btn {
+        width: 150px;
+        height: 40px;
+        margin-top: 7.5rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 600px)and (max-width: 639px) {
+    .pow .locais-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 6rem;
+        margin-left: 16rem;
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .pow .categ-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 9.5rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 640px)and (max-width: 689px) {
+    .pow .locais-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 6rem;
+        margin-left: 18rem;
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .pow .categ-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 10.5rem;
+        margin-left: 6rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pow .locais-btn {
+        width: 130px;
+        height: 35px;
+        margin-top: 3rem;
+        margin-left: 10rem;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .pow .categ-btn {
+        width: 130px;
+        height: 35px;
+        margin-top: 5.5rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1300px)and (max-width: 1900px) {
+    .pow .locais-btn {
+        width: 130px;
+        height: 35px;
+        margin-top: 4rem;
+        margin-left: 12rem;
+        font-size: 14px;
+    }
+
+    .pow .categ-btn {
+        width: 130px;
+        height: 35px;
+        margin-top: 6.5rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .pow .locais-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 6.5rem;
+        margin-left: 16rem;
+        font-size: 14px;
+    }
+
+    .pow .categ-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 10rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+

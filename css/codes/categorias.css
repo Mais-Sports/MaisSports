@@ -2,15 +2,16 @@
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
     --cor-fonte3: #c70074d2;
-    --cor-bar: #23232e;
+    --cor-bar: #ffffff;
     --cor-fundo: #f80091bd;
-
+    --cor-fundo2: #d12089;
+    --cor-fundo3: rgb(0, 29, 110);
 }
 
 .categs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
     margin: 0, 0, 0;
 }
 

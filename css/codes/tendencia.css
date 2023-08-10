@@ -2,9 +2,10 @@
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
     --cor-fonte3: #c70074d2;
-    --cor-bar: #23232e;
+    --cor-bar: #ffffff;
     --cor-fundo: #f80091bd;
-
+    --cor-fundo2: #d12089;
+    --cor-fundo3: rgb(0, 29, 110);
 }
 
 .center-text h2 {

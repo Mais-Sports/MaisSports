@@ -6,34 +6,44 @@ var senha = document.forms['form']['senha'];
 var email_error = document.getElementById('email_error');
 var pass_error = document.getElementById('pass_error');
 
-email.addEventListener('textInput', email_Verify);
-senha.addEventListener('textInput', pass_Verify);
+// email.addEventListener('textInput', email_Verify);
+// senha.addEventListener('textInput', pass_Verify);
 
 function validated(){
-    if(email.value.length < 9) {
+    alert(email.value.length )
+    if(email.value.length < 8) {
         email.style.border = "1px solid red";
         email_error.style.display = "block";
         email.focus();
         return false;
     }
-    if(senha.value.length < 9) {
+    if(senha.value.length < 5) {
         senha.style.border = "1px solid red";
         pass_error.style.display = "block";
         senha.focus();
         return false;
     }
-}
-function email_Verify(){
-    if (email.value.legth >= 8){
+
+    if((email.value.legth >= 8) && (senha.value.legth >= 5)){
         email.style.border = "1px solid silver";
         email_error.style.display = "none";
         return true;
     }
+
+
+
 }
-function pass_Verify(){
-    if (senha.value.legth >= 5){
-        senha.style.border = "1px solid silver";
-        pass_error.style.display = "none";
-        return true;
-    }
-}
+// function email_Verify(){
+//     if (email.value.legth >= 8){
+//         email.style.border = "1px solid silver";
+//         email_error.style.display = "none";
+//         return true;
+//     }
+// }
+// function pass_Verify(){
+//     if (senha.value.legth >= 5){
+//         senha.style.border = "1px solid silver";
+//         pass_error.style.display = "none";
+//         return true;
+//     }
+// }

@@ -5,7 +5,7 @@
     --cor-bar: #ffffff;
     --cor-fundo: #f80091bd;
     --cor-fundo2: #d12089;
-
+    --cor-fundo3: rgb(0, 29, 110);
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -55,8 +55,7 @@
         top: 0;
         font-size: 20px;
         width: 50px;
-        color: var(--cor-fonte);
-        background-color: var(--cor-bar);
+        color: var(--cor-fundo3);
         height: 100%;
         text-align: center;
         line-height: 50px;

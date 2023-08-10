@@ -5,7 +5,7 @@
     --cor-bar: #ffffff;
     --cor-fundo: #f80091bd;
     --cor-fundo2: #d12089;
-
+    --cor-fundo3: rgb(0, 29, 110);
 }
 @media screen and (min-width: 535px) and (max-width: 768px) {
     body {
@@ -61,8 +61,7 @@
     top: 0;
     font-size: 20px;
     width: 50px;
-    color: var(--cor-fonte);
-    background-color: var(--cor-bar);
+    color: var(--cor-fundo3);
     height: 100%;
     text-align: center;
     line-height: 50px;
@@ -71,7 +70,7 @@
 
 
 #check-2:checked~.search-box-2 .icon-2 {
-    background-color: var(--cor-bar);
+    background-color: var(--cor-fundo2);
     color: var(--cor-fonte);
     border-radius: 0 25px 25px 0;
     width: 60px;
@@ -184,6 +183,12 @@ a.button:hover {
     color: var(--cor-fonte);
     background-color: #161c3bf7;
 
+}
+.fav i {
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 25px;
+    color:#f80091bd;
 }
 
 }

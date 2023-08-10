@@ -8,14 +8,14 @@
     text-decoration: none;
 }
 
-
 :root {
     --cor-fonte: #FFFF;
     --cor-fonte2: #000;
     --cor-fonte3: #c70074d2;
-    --cor-bar: #23232e;
+    --cor-bar: #ffffff;
     --cor-fundo: #f80091bd;
-
+    --cor-fundo2: #d12089;
+    --cor-fundo3: rgb(0, 29, 110);
 }
 
 body {
@@ -26,8 +26,8 @@ body {
 .fav i {
     margin-top: 0px;
     display: inline-block;
-    color: red;
     font-size: 25px;
+    color:#f80091bd;
 }
 
 
@@ -84,8 +84,7 @@ body {
     top: 0;
     font-size: 20px;
     width: 50px;
-    color: var(--cor-fonte);
-    background-color: var(--cor-bar);
+    color: var(--cor-fundo3);
     height: 100%;
     text-align: center;
     line-height: 50px;

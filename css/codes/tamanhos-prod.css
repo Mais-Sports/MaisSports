@@ -1,0 +1,147 @@
+/* Codigo de formatação dos quadradinhos do size */
+.tamanhos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26px, 55px));
+    gap: 1rem;
+    margin: 0, 0, 0;
+    font-size: 14px;
+    justify-content: center;
+    color: var(--cor-fonte3);
+}
+
+.taman-38 {
+    width: 45px;
+    transition: all .40s;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 0 0 6px;
+}
+
+.taman-39 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-40 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-41 {
+    padding: 0 0 0 10px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-42 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-43 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-44 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-45 {
+    padding: 0 0 0 6px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taman-38:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-39:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-40:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-41:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-42:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-43:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-44:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}
+
+.taman-45:hover {
+    width: 45px;
+    background-color: var(--cor-fonte3);
+    color: var(--cor-fonte);
+    border: 1px solid var(--cor-bar);
+    transform: scale(0.9);
+    transition: all .40s;
+}

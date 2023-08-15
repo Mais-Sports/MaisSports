@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +21,8 @@
     <link rel="stylesheet" href="css/codes/categorias.css">
     <link rel="stylesheet" href="css/codes/navbar.css">
     <link rel="stylesheet" href="css/codes/product-page.css">
+    <link rel="stylesheet" href="css/codes/buttons.css">
+    <link rel="stylesheet" href="css/codes/tamanhos-prod.css">
 
     <!-- Others Links -->
 
@@ -34,7 +35,6 @@
 <body>
     <header>
         <nav>
-
             <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
             <div class="heart"></div>
             <div class="box">
@@ -47,19 +47,38 @@
                 </div>
             </div>
             </div>
-
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            
-            <ul class="nav-list ">
-                <li class="lipc"><a class="stro2" href="/">Lançamentos</a></li>
-                <li class="lipc"><a class="stro2" href="/">Carrinho</a></li>
-                <li class="lipc"><a class="stro2" href="login.html">Login</a></li>
 
-                <li class="limob"><a class="login-bar" href="login.html"><i class='bx bxs-user' widht="45px"
+
+
+            <ul class="nav-list ">
+                <div class="li-pc">
+                    <li>
+                        <button data-quantity="0" class="btn-cart">
+                        <svg class="icon-cart" viewBox="0 0 24.38 30.52" xmlns="http://www.w3.org/2000/svg">
+                            <title>Carrinho</title>
+                            <path transform="translate(-3.62 -0.85)"
+                                d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+                            </path>
+                        </svg>
+                        <span class="quantity"></span>
+                    </button></li>
+
+                    <li>
+                        <a class="stro2" href="/">Lançamentos</a></li>
+                    <li>
+                        <div class="fav"><a href="/"><i class='bx bx-heart'></i></a></div>
+                    </li>
+                    <li>
+                        <a class="stro2" href="login.html">Login</a>
+                    </li>
+                </div>
+
+                <li class="limob"><a class="login-bar" href="/"><i class='bx bxs-user' widht="45px"
                             height="45px"></i>Entrar</a></li>
                 <li class="limob"><a class="stro" href="/">Locais Esportivos</a></li>
                 <li class="limob"><a class="stro" href="/">Carrinho<i class='bx bxs-chevron-right'></i></a></li>
@@ -69,288 +88,131 @@
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Promoções</span></a></li>
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Eventos</span></a></li>
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Ajuda</span></a></li>
+
             </ul>
-            <li class="lipc">
-                <div class="fav"><a href="/"><i class='bx bx-heart'></i></a></div>
-            </li>
         </nav>
     </header>
 
-    <div class="box-2">
-        <input type="checkbox" id="check-2">
-        <div class="search-box-2">
-            <input type="text" placeholder="Pesquise aqui...">
-            <label for="check-2" class="icon-2">
-                <i class='bx bx-search'></i>
-            </label>
+    <section class="container-product">
+        <div class="container">
+            <div class="card">
+                <!-- FOTOS DO PRODUTO -->
+                <div class="product-card">
+                    <img src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"
+                        alt="" srcset="">
+                    <img src="https://artwalk.vteximg.com.br/arquivos/ids/325810-1000-1000/CZ020-4-400-2.jpg?v=638060306392000000"
+                        alt="" srcset="">
+                    <img src="https://artwalk.vteximg.com.br/arquivos/ids/331790-1000-1000/CZ020-4-400-3.jpg?v=638060328080670000"
+                        alt="" srcset="">
+                    <img src="https://artwalk.vteximg.com.br/arquivos/ids/335129-1000-1000/CZ020-4-400-4.jpg?v=638060336797430000"
+                        alt="" srcset="">
+                    <img src="https://artwalk.vteximg.com.br/arquivos/ids/346259-1000-1000/CZ020-4-400-6.jpg?v=638060385662430000"
+                        alt="" srcset="">
+                </div>
+
+                <!-- DESCRIÇAO DO PRODUTO/PREÇO -->
+
+                <div class="product-info">
+                    <div class="title-prod">
+                        <h2>Kyrie 8 Big Kid 'ALUMINIUM'</h2>
+                        <p>Um tênis com um ótimo amortecimento em quadras, tanto externas e internas</p>
+                    </div>
+                    <div class="ratting-prod">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <!-- Fotos das otras colorways/variantes do produto -->
+                    <div class="mini-imgs">
+                        <div class="mini-pics-product">
+                            <img src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"
+                                alt="">
+                        </div>
+                        <div class="mini-pics-product">
+                            <img src="https://artwalk.vteximg.com.br/arquivos/ids/320759-1000-1000/CZ020-4-002-1.jpg?v=638060290768070000"
+                                alt="">
+                        </div>
+                        <div class="mini-pics-product">
+                            <img src="https://artwalk.vteximg.com.br/arquivos/ids/245787-1000-1000/Tenis-Nike-Kyrie-Infinity-Masculino-Rosa.jpg?v=637866880636230000"
+                                alt="">
+                        </div>
+                        <div class="mini-pics-product">
+                            <img src="https://artwalk.vteximg.com.br/arquivos/ids/243750-1000-1000/Tenis-Nike-Kyrie-8-Preto.jpg?v=637819108502670000"
+                                alt="">
+                        </div>
+                        <div class="mini-pics-product">
+                            <img src="https://artwalk.vteximg.com.br/arquivos/ids/245877-1000-1000/Tenis-Nike-Kyrie-Infinity-Masculino-Preto.jpg?v=637868345156730000"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="center-text">
+                        <h2>Selecione <span>seu tamanho</span></h2>
+                    </div>
+                    <!-- Seleção de tamanhos  -->
+                    <div class="tamanhos">
+                        <div class="taman-38">
+                            <h2>38</h2>
+                        </div>
+                        <div class="taman-39">
+                            <h2>39</h2>
+                        </div>
+                        <div class="taman-40">
+                            <h2>40</h2>
+                        </div>
+                        <div class="taman-41">
+                            <h2>41</h2>
+                        </div>
+                        <div class="taman-42">
+                            <h2>42</h2>
+                        </div>
+                        <div class="taman-43">
+                            <h2>43</h2>
+                        </div>
+                        <div class="taman-44">
+                            <h2>44</h2>
+                        </div>
+                        <div class="taman-45">
+                            <h2>45</h2>
+                        </div>
+                    </div>
+                    <!-- Botão para comprar/adicionar no carrinho -->
+                    <div class="button">
+                        <div class="button-wrapper">
+                            <div class="text">Compre agora!</div>
+                            <span class="icon">
+                                <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <div class="pai">
+        <section class="relacionados">
+            <div>
+                <p>Produtos relacionados</p>
+            </div>
+        </section>
     </div>
-    <section class="main-home">
-        <div class="main-text">
-            <h5>Kyrie Infinity</h5>
-            <h1>Novas Colorways <br>
-                Já Disponível</h1>
-            <p>Domine as quadras com o poder infinito do Kyrie Infinity.</p>
 
-            <a href="product-page.html" class="main-btn">Veja Agora <i class='bx bxs-chevron-right'></i></a>
-        </div>
 
-        <div class="down-arrow">
-            <a href="#trending" class="down"><i class='bx bxs-chevron-down'></i></a>
-        </div>
-    </section>
 
-    <!-- Categorias -->
-    <section class="categories" id="categories">
-        <h2>Categorias</h2>
-        <div class="categs">
-            <div class="pow">
-                <img src="images/categ-bkt.png" alt="basquete">
-                <a href="#" class="categ-btn">Veja Agora <i class='bx bxs-chevron-right'></i></a>
-            </div>
-            <div class="pow">
-                <img src="images/teams-shirts.png" alt="camisas de time">
-                <a href="#" class="categ-btn">Veja Agora <i class='bx bxs-chevron-right'></i></a>
-            </div>
-            <div class="pow">
-                <img src="images/locais-sports.png" alt="basquete">
-                <a href="#" class="locais-btn">Veja Agora <i class='bx bxs-chevron-right'></i></a>
-            </div>
-        </div>
 
-    </section>
-    <!-- Sessôes dos produtos -->
 
-    <section class="trending-products" id="trending">
-        <div class="center-text">
-            <h2>Novas Tendências/<span>Produtos</span></h2>
-        </div>
-        <div class="products">
-            <div class="row">
-                <img  src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>NEW</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>TÊNIS NIKE KYRIE 8</h4>
-                    <p>R$719,90</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/320759-1000-1000/CZ020-4-002-1.jpg?v=638060290768070000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>NEW</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>TÊNIS NIKE KYRIE 8</h4>
-                    <p>R$719,90</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/245787-1000-1000/Tenis-Nike-Kyrie-Infinity-Masculino-Rosa.jpg?v=637866880636230000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>NEw</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>TÊNIS NIKE KYRIE 8</h4>
-                    <p>R$719,90</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/243750-1000-1000/Tenis-Nike-Kyrie-8-Preto.jpg?v=637819108502670000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>NEW</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>TÊNIS NIKE KYRIE 8</h4>
-                    <p>R$719,90</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <img class="prt"src="https://artwalk.vteximg.com.br/arquivos/ids/245877-1000-1000/Tenis-Nike-Kyrie-Infinity-Masculino-Preto.jpg?v=637868345156730000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>NEW</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>TÊNIS NIKE KYRIE 8</h4>
-                    <p>R$719,90</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="center-text-camisas">
-            <h2>Camisas de <span>Time</span></h2>
-        </div>
-
-        <div class="products">
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/234008-1000-1000/Camiseta-Jordan-X-PSG-Statement-Masculina-Azul.jpg?v=637569609852970000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>CAMISETA JORDAN X PSG STATEMENT MASCULINA</h4>
-                    <p>R$219,99</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/226755-1000-1000/Camiseta-Nike-Nigeria-Home-Masculina-Multicolor.jpg?v=637365525893670000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>CAMISETA NIKE NIGERIA HOME MASCULINA</h4>
-                    <p>R$249,99</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <img class="prt" src="https://artwalk.vteximg.com.br/arquivos/ids/233540-1000-1000/Camiseta-Jordan-X-PSG-Masculina-Preto.jpg?v=637558982442800000"
-                    alt="" srcset="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>CAMISETA JORDAN X PSG MASCULINA</h4>
-                    <p>R$279,80</p>
-                </div>
-            </div>
-            <div class="row">
-                <img class="prt" src="https://imgnike-a.akamaihd.net/768x768/022631ID.jpg" alt="" srcset="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Camisa de Goleiro Nike Brasil<br>2022 Torcedor Pro Masculina</h4>
-                    <p>R$349,99</p>
-                </div>
-            </div>
-            <div class="row">
-                <img class="prt" src="https://imgnike-a.akamaihd.net/768x768/02315615.jpg" alt="" srcset="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Camisa Nike França I 2022<br>Torcedor Pro Masculina</h4>
-                    <p>R$499,90</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="js/valid.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

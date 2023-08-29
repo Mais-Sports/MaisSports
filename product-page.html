@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/codes/product-page.css">
     <link rel="stylesheet" href="css/codes/buttons.css">
     <link rel="stylesheet" href="css/codes/tamanhos-prod.css">
+    <link rel="stylesheet" href="css/codes/carrosel.css">
 
     <!-- Others Links -->
 
@@ -35,6 +36,7 @@
 <body>
     <header>
         <nav>
+
             <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
             <div class="heart"></div>
             <div class="box">
@@ -47,38 +49,19 @@
                 </div>
             </div>
             </div>
+
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
 
-
-
             <ul class="nav-list ">
-                <div class="li-pc">
-                    <li>
-                        <button data-quantity="0" class="btn-cart">
-                        <svg class="icon-cart" viewBox="0 0 24.38 30.52" xmlns="http://www.w3.org/2000/svg">
-                            <title>Carrinho</title>
-                            <path transform="translate(-3.62 -0.85)"
-                                d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
-                            </path>
-                        </svg>
-                        <span class="quantity"></span>
-                    </button></li>
+                <li class="lipc"><a class="stro2" href="/">Lançamentos</a></li>
+                <li class="lipc"><a class="stro2" href="/">Carrinho</a></li>
+                <li class="lipc"><a class="stro2" href="login.html">Login</a></li>
 
-                    <li>
-                        <a class="stro2" href="/">Lançamentos</a></li>
-                    <li>
-                        <div class="fav"><a href="/"><i class='bx bx-heart'></i></a></div>
-                    </li>
-                    <li>
-                        <a class="stro2" href="login.html">Login</a>
-                    </li>
-                </div>
-
-                <li class="limob"><a class="login-bar" href="/"><i class='bx bxs-user' widht="45px"
+                <li class="limob"><a class="login-bar" href="login.html"><i class='bx bxs-user' widht="45px"
                             height="45px"></i>Entrar</a></li>
                 <li class="limob"><a class="stro" href="/">Locais Esportivos</a></li>
                 <li class="limob"><a class="stro" href="/">Carrinho<i class='bx bxs-chevron-right'></i></a></li>
@@ -88,15 +71,75 @@
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Promoções</span></a></li>
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Eventos</span></a></li>
                 <li class="limob"><a class="stro" href="/"><span class="span-color">Ajuda</span></a></li>
-
             </ul>
+            <li class="lipc">
+                <div class="fav"><a href="/"><i class='bx bx-heart'></i></a></div>
+            </li>
         </nav>
     </header>
+
+    <div class="box-2">
+        <input type="checkbox" id="check-2">
+        <div class="search-box-2">
+            <input type="text" placeholder="Pesquise aqui...">
+            <label for="check-2" class="icon-2">
+                <i class='bx bx-search'></i>
+            </label>
+        </div>
+    </div>
 
     <section class="container-product">
         <div class="container">
             <div class="card">
                 <!-- FOTOS DO PRODUTO -->
+                
+                <!--<section class="slider">
+                    <div class="slider-content">
+                        
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <input type="radio" name="btn-radio" id="radio4">
+                        <input type="radio" name="btn-radio" id="radio5">
+            
+                        <div class="slide-box primeiro">
+                            <img class="img-desktop" src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000" alt="slide 1">
+                        </div>
+            
+                        <div class="slide-box">
+                            <img class="img-desktop" src="https://artwalk.vteximg.com.br/arquivos/ids/325810-1000-1000/CZ020-4-400-2.jpg?v=638060306392000000" alt="slide 3">
+                        </div>
+            
+                        <div class="slide-box">
+                            <img class="img-desktop" src="https://artwalk.vteximg.com.br/arquivos/ids/331790-1000-1000/CZ020-4-400-3.jpg?v=638060328080670000" alt="slide 3">
+                        </div>
+            
+                        <div class="slide-box">
+                            <img class="img-desktop" src="https://artwalk.vteximg.com.br/arquivos/ids/335129-1000-1000/CZ020-4-400-4.jpg?v=638060336797430000" alt="slide 3">
+                        </div>
+            
+                        <div class="slide-box">
+                            <img class="img-desktop" src="https://artwalk.vteximg.com.br/arquivos/ids/346259-1000-1000/CZ020-4-400-6.jpg?v=638060385662430000" alt="slide 3">
+                        </div>
+            
+                        <div class="nav-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+            
+                        <div class="nav-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                        </div>
+            
+                    </div>
+                    </section>
+                -->
+                
                 <div class="product-card">
                     <img src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"
                         alt="" srcset="">
@@ -152,6 +195,12 @@
                     </div>
                     <!-- Seleção de tamanhos  -->
                     <div class="tamanhos">
+                        <div class="taman-38">
+                            <h2>36</h2>
+                        </div>
+                        <div class="taman-38">
+                            <h2>37</h2>
+                        </div>
                         <div class="taman-38">
                             <h2>38</h2>
                         </div>

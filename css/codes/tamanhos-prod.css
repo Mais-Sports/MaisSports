@@ -1,7 +1,7 @@
 /* Codigo de formatação dos quadradinhos do size */
 .tamanhos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26px, 55px));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 10px));
     gap: 1rem;
     margin: 0, 0, 0;
     font-size: 14px;

@@ -1,147 +1,75 @@
+:root {
+    --cor-fonte: #FFFF;
+    --cor-fonte2: #000;
+    --cor-fonte3: #c70074d2;
+    --cor-bar: #f5f5f5;
+    --cor-fundo: #f80091bd;
+    --cor-fundo2: #d12089;
+    --cor-fundo3: rgba(0, 33, 123, 0.562);
+}
+
+
+
 /* Codigo de formatação dos quadradinhos do size */
 .tamanhos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 10px));
-    gap: 1rem;
-    margin: 0, 0, 0;
-    font-size: 14px;
-    justify-content: center;
+    display: flex;
+    justify-content: start;
     color: var(--cor-fonte3);
 }
 
-.taman-38 {
-    width: 45px;
-    transition: all .40s;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 0 0 0 6px;
+.tam {
+    font-size: 18px;
+    border: solid 1px;
+    width: 70px;
+    transform: translate(0.1 ease);
 }
 
-.taman-39 {
-    padding: 0 0 0 6px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.tamanhos select {
+    display: block;
+    padding: 5px, 10px;
+    margin-left: 10px;
 }
 
-.taman-40 {
-    padding: 0 0 0 6px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.tamanhos input {
+    width: 50px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
-.taman-41 {
-    padding: 0 0 0 10px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.tamanhos input:focus {
+    outline: none;
 }
 
-.taman-42 {
-    padding: 0 0 0 6px;
+.buy-btn {
+    background: var(--cor-fundo2);
+    border: none;
     width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+    opacity: 1;
+    transition: 0.3 all;
+    color: white;
 }
 
-.taman-43 {
-    padding: 0 0 0 6px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.tamanhos #quant_error {
+    margin-top: 5px;
+    width: 345px;
+    font-size: 15px;
+    color: #C62828;
+    background: rgb(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
 }
-
-.taman-44 {
-    padding: 0 0 0 6px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
+.start-text h2 {
+    color: var(--cor-fonte2);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 15px;
 }
-
-.taman-45 {
-    padding: 0 0 0 6px;
-    width: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.taman-38:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-39:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-40:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-41:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-42:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-43:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-44:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
-}
-
-.taman-45:hover {
-    width: 45px;
-    background-color: var(--cor-fonte3);
-    color: var(--cor-fonte);
-    border: 1px solid var(--cor-bar);
-    transform: scale(0.9);
-    transition: all .40s;
+.start-text span{
+    color: var(--cor-fonte3);
 }

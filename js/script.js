@@ -66,21 +66,17 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 
-var radio = document.querySelector('.manual-btn')
-var cont = 1
 
-document.getElementById('radio1').checked = true
+var tamanhos = document.input['tamanhos']['quantidade'];
 
-setInterval(() => {
-    proximaImg()
-}, 5000)
+var quant_error = document.getElementById('quant_error');
 
-function proximaImg(){
-    cont++
-
-    if(cont > 3){
-        cont = 1 
-    }
-
-    document.getElementById('radio'+cont).checked = true
+function valiQuant() {
+  alert(quantidade.value)
+  if (quantidade.value <= 50) {
+    quantidade.style.border = "1px solid red";
+    quantidade_error.style.display = "block";
+    quantidade.classList.toggle("error");
+  }
 }
+document.addEventListener("keydown",() => {valiQuant()})

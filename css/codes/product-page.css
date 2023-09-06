@@ -35,10 +35,23 @@
     margin-left: 2rem;
 
 }
+.pics-card {
+    width: 10vh;
+    height: 60vh;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.pics-card img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
 
 .product-card {
-    width: 90vh;
+    width: 80vh;
     height: 60vh;
+    
 }
 
 .product-card img {
@@ -112,6 +125,9 @@
 .center-text-prod span{
     color: var(--cor-fonte3);
 }
+
+
+
 
 
 /*height="30.52" width="24.38"*/

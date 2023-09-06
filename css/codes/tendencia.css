@@ -89,3 +89,6 @@
         font-size: 18px;
     }
 }
+.error{
+    border: solid 1px red;
+}

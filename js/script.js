@@ -74,8 +74,6 @@ var quant_error = document.getElementById('quant_error');
 function valiQuant() {
   alert(quantidade.value)
   if (quantidade.value <= 50) {
-    quantidade.style.border = "1px solid red";
-    quantidade_error.style.display = "block";
     quantidade.classList.toggle("error");
   }
 }

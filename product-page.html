@@ -93,39 +93,36 @@
             <div class="card">
 
                 <div class="pics-card">
-                    <a type="checkbox" href="#t1"><img
-                            src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"></a>
-                    <a href="#t1"><img
-                            src="https://artwalk.vteximg.com.br/arquivos/ids/325810-1000-1000/CZ020-4-400-2.jpg?v=638060306392000000"
-                            href="#t2"></a>
-                    <a href="#t1"><img
-                            src="https://artwalk.vteximg.com.br/arquivos/ids/331790-1000-1000/CZ020-4-400-3.jpg?v=638060328080670000"
-                            href="#t3"></a>
-                    <a href="#t1"><img
-                            src="https://artwalk.vteximg.com.br/arquivos/ids/335129-1000-1000/CZ020-4-400-4.jpg?v=638060336797430000"
-                            href="#t4"></a>
-                    <a href="#t1"><img
-                            src="https://artwalk.vteximg.com.br/arquivos/ids/346259-1000-1000/CZ020-4-400-6.jpg?v=638060385662430000"
-                            href="#t5"></a>
+                    <img class="small-img" src="images/k-1.webp">
+                    <img class="small-img" src="https://artwalk.vteximg.com.br/arquivos/ids/325810-1000-1000/CZ020-4-400-2.jpg?v=638060306392000000">
+                    <img class="small-img" src="https://artwalk.vteximg.com.br/arquivos/ids/331790-1000-1000/CZ020-4-400-3.jpg?v=638060328080670000">
+                    <img class="small-img" src="https://artwalk.vteximg.com.br/arquivos/ids/335129-1000-1000/CZ020-4-400-4.jpg?v=638060336797430000">
+                    <img class="small-img" src="https://artwalk.vteximg.com.br/arquivos/ids/346259-1000-1000/CZ020-4-400-6.jpg?v=638060385662430000">
                 </div>
 
                 <div class="product-card">
-                    <img id="t1"
-                        src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000"
-                        href="">
-                    <img id="t2"
-                        src="https://artwalk.vteximg.com.br/arquivos/ids/325810-1000-1000/CZ020-4-400-2.jpg?v=638060306392000000"
-                        alt="" srcset="">
-                    <img id="t3"
-                        src="https://artwalk.vteximg.com.br/arquivos/ids/331790-1000-1000/CZ020-4-400-3.jpg?v=638060328080670000"
-                        alt="" srcset="">
-                    <img id="t4"
-                        src="https://artwalk.vteximg.com.br/arquivos/ids/335129-1000-1000/CZ020-4-400-4.jpg?v=638060336797430000"
-                        alt="" srcset="">
-                    <img id="t5"
-                        src="https://artwalk.vteximg.com.br/arquivos/ids/346259-1000-1000/CZ020-4-400-6.jpg?v=638060385662430000"
-                        alt="" srcset="">
+                    <img id="MainImg"
+                        src="https://artwalk.vteximg.com.br/arquivos/ids/321781-1000-1000/CZ020-4-400-1.jpg?v=638060295259130000">
                 </div>
+            
+                <script>
+                    // Obtém todas as imagens pequenas
+                    const smallImages = document.querySelectorAll('.small-img');
+            
+                    // Obtém a imagem principal
+                    const mainImage = document.getElementById('MainImg');
+            
+                    // Adiciona um ouvinte de evento de clique a cada imagem pequena
+                    smallImages.forEach((smallImg) => {
+                        smallImg.addEventListener('click', () => {
+                            // Obtém o URL da imagem clicada usando o atributo data-src
+                            const newImageSrc = smallImg.getAttribute('src');
+            
+                            // Define o URL da imagem principal para o novo URL
+                            mainImage.src = newImageSrc;
+                        });
+                    });
+                </script>
 
                 <!-- DESCRIÇAO DO PRODUTO/PREÇO -->
 
@@ -181,11 +178,8 @@
                             <option>44</option>
                             <option>45</option>
                         </select>
-                        <form class="tamn_form" method="POST" name="tamanhos"onsubmit= "return valiQuand()"> 
-                            <input id="quantidade" type="number" value="1">
-                             <div id="quant_error">Não temos essa quantidade de pares</div>
-                        </form>
-                       
+                        <input id="quantidade" type="number" value="1" max="50">
+
                     </div>
                     <!-- Botão para comprar/adicionar no carrinho -->
                     <div class="button">
@@ -219,14 +213,6 @@
             </div>
         </section>
     </div>
-
-
-
-
-
-
-
-
 
 </body>
 

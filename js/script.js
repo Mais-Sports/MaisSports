@@ -65,16 +65,3 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-
-
-var tamanhos = document.input['tamanhos']['quantidade'];
-
-var quant_error = document.getElementById('quant_error');
-
-function valiQuant() {
-  alert(quantidade.value)
-  if (quantidade.value <= 50) {
-    quantidade.classList.toggle("error");
-  }
-}
-document.addEventListener("keydown",() => {valiQuant()})

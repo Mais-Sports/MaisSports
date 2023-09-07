@@ -43,21 +43,24 @@
 }
 
 .pics-card img {
+    overflow: hidden;
     width: 100%;
     height: auto;
     transition: all .40s;
+    cursor: pointer;
 }
 
 .product-card {
     width: 80vh;
     height: 60vh;
-    
+    overflow: hidden;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
     transition: all .40s;
+    overflow: hidden;
 }
 
 .mini-imgs {

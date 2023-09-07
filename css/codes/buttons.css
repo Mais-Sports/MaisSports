@@ -118,6 +118,18 @@
 }
 
 
+@media screen and (max-width: 999px){
+    .button {
+        --width: 266px;
+        --height: 50px;
+        --button-color: #222;
+        --tooltip-color: #fff;
+        margin-top: 5rem;
+        margin-left: 14%;
+    }
+}
+
+
 /* Botão do carrinho */
 
 .btn-cart {

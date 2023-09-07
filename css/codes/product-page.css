@@ -8,6 +8,9 @@
     --cor-fundo3: rgba(0, 33, 123, 0.562);
 }
 
+*{
+    overflow-x: hidden;
+}
 
 .card {
     display: flex;
@@ -35,6 +38,7 @@
     margin-left: 2rem;
 
 }
+
 .pics-card {
     width: 10vh;
     height: 60vh;
@@ -117,6 +121,7 @@
     transition: all .40s;
     margin-left: 10%;
 }
+
 .center-text-prod h2 {
     margin-top: 70vh;
     margin-bottom: 10rem;
@@ -125,12 +130,92 @@
     text-transform: capitalize;
     text-align: center;
 }
-.center-text-prod span{
+
+.center-text-prod span {
     color: var(--cor-fonte3);
 }
 
+.mobile-pics-card {
+    display: none;
+}
 
 
+@media screen and (min-width: 801px) and (max-width: 999px) {
 
+    .pics-card {
+        display: none;
+    }
 
-/*height="30.52" width="24.38"*/
+    .mobile-pics-card {
+        display: flex;
+        align-items: baseline;
+        margin-top: 46vh;
+        width: 45.5vh;
+        position: absolute;
+    }
+
+    .card {
+        display: flex;
+        position: absolute;
+        width: 80%;
+        height: 70vh;
+        background-color: var(--cor-bar);
+        border-radius: 10px;
+        padding: 35px 35px 35px;
+    }
+
+    .title-prod h2 {
+        color: black;
+        margin-left: 1rem;
+        font-size: 18px;
+    }
+    
+    
+    .product-info p {
+        text-align: start;
+        font-size: 16px;
+        margin-left: 1rem;
+    
+    }
+
+    .mini-imgs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+        gap: 1rem;
+        margin: 0, 0, 0;
+    }
+
+    .mini-pics-product {
+        width: 80px;
+        margin-left: 5px;
+
+    }
+
+    .mini-pics-product img {
+        width: 80%;
+        transition: all .40s;
+        cursor: pointer;
+        overflow: hidden;
+        height: auto;
+        mix-blend-mode: multiply;
+    }
+
+    .mini-pics-product img:hover {
+        transform: scale(1.1);
+        opacity: 0.13;
+    }
+
+    .relacionados {
+        width: 100vh;
+        height: 40vh;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+    /*height="30.52" width="24.38"*/

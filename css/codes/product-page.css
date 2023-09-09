@@ -5,13 +5,12 @@
     --cor-bar: #f5f5f5;
     --cor-fundo: #f80091bd;
     --cor-fundo2: #d12089;
-    --cor-fundo3: rgb(255, 255, 255);
+    --cor-fundo3: rgb(37, 37, 37);
 }
 
 * {
     overflow-x: hidden;
 }
-
 .card {
     display: flex;
     position: absolute;
@@ -20,26 +19,35 @@
     background-color: var(--cor-bar);
     border-radius: 10px;
     padding: 35px 35px 35px;
+    overflow: hidden;
 }
 
 .container-product {
     transition: all .40s;
 }
 
-.title-prod h2 {
+.title-prod h2{
     color: black;
     margin-left: 2rem;
+    font-size: 22px;
 }
-
+.title-prod a {
+    color: black;
+    margin-left: 2rem;
+    font-size: 17px;
+}
 
 .product-info p {
     text-align: start;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 2rem;
-
 }
 
+.title-prod a{
+    text-decoration: none;
+}
 .pics-card {
+    margin-top: 2rem;
     width: 10vh;
     height: 60vh;
     overflow: hidden;
@@ -52,19 +60,32 @@
     height: auto;
     transition: all .40s;
     cursor: pointer;
+    border: 1px solid var(--cor-fundo2);
+    border-radius: 15%;
+}
+
+.pics-card img:hover {
+    transform: scale(0.8);
+    border: 1px solid var(--cor-fundo2);
+    border-radius: 20%;
 }
 
 .product-card {
     width: 80vh;
     height: 60vh;
     overflow: hidden;
+
 }
 
 .product-card img {
-    width: 100%;
+    width: 75%;
     height: auto;
     transition: all .40s;
+    display: flex;
+    margin-left: 6rem;
     overflow: hidden;
+    border: 2px solid var(--cor-fundo2);
+    border-radius: 15%;
 }
 
 .mini-imgs {
@@ -79,7 +100,7 @@
     display: flex;
     position: relative;
     transition: all .40s;
-    width: 130px;
+    width: 110px;
     margin-left: 5px;
     border-radius: 10px;
     overflow: hidden;
@@ -95,8 +116,14 @@
 }
 
 .mini-pics-product img:hover {
-    transform: scale(1.1);
-    opacity: 0.13;
+    transform: scale(0.8);
+    border: 1px solid var(--cor-fundo2);
+    border-radius: 20%;
+}
+
+.select-prod {
+    border: 1px solid var(--cor-fundo2);
+    border-radius: 20%;
 }
 
 .ratting-prod i {
@@ -125,24 +152,30 @@
     margin: 0, 0, 0;
 }
 
-.relacionado{
+.relacionado {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 2rem;
 }
-.img-relac{
+
+.img-relac {
     position: relative;
     transition: all .40s;
     overflow: hidden;
 }
-.img-relac img{
+
+.img-relac img {
     width: 100%;
     height: auto;
-    transition: all .40s; 
+    transition: all .40s;
 }
-.img-relac img:hover{
+
+
+.img-relac img:hover {
     transform: scale(0.9);
 }
+
+
 
 .center-text-prod h2 {
     margin-top: 70vh;
@@ -175,7 +208,7 @@
     display: none;
 }
 
-.riscado{
+.riscado {
     text-decoration: line-through;
 }
 

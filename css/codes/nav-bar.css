@@ -48,6 +48,10 @@ nav {
     z-index: 1;
 }
 
+.nav-list a:hover {
+    color: #d12089;
+}
+
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
@@ -85,6 +89,10 @@ nav {
         transition: transform 0.3s ease-in;
     }
 
+    .nav-list a:hover {
+        color: #d12089;
+    }
+
     .nav-list li {
         margin-left: 0;
         opacity: 0;
@@ -94,8 +102,9 @@ nav {
         display: block;
     }
 }
-@media (min-width: 320px){
-    .nav-list{
+
+@media (min-width: 320px) {
+    .nav-list {
         top: 16vh;
     }
 }

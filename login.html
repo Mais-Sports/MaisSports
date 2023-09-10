@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/codes/tendencia.css">
     <link rel="stylesheet" href="css/codes/client-review.css">
     <link rel="stylesheet" href="css/codes/footer.css">
+    <link rel="stylesheet" href="css/codes/nav-bar.css">
 
     <!-- Others Links -->
 
@@ -150,14 +151,32 @@
         }
     </style>
 
-    <header>
-        <nav>
-            <a class="logo" href="/"><img src="images/LOGO.png"></a>
-            <ul class="nav-list">
-                <li class="lipc"><a class="stro2" href="/">Pagina Inicial</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+
+        <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Pesquise aqui...">
+                <label for="check" class="icon">
+                    <i class='bx bx-search'></i>
+                </label>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="/">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
+
     <section class="area-login">
         <div class="login">
             <h1>LOGIN</h1>
@@ -179,17 +198,17 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <h1>logo</h1>
-                <p>Its all about your dream</p>
+                <figure class="logo"><img src="images/icon-msports.jpg"></figure>
+                <p>Explore, Equipe-se, e Inspire-se com <br>+Sports: O Seu Portal para o Mundo do Esporte!</p>
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com/_maisport/" class="footer-link" id="instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="#" class="footer-link" id="github">
+                    <a href="https://github.com/astr0ns" class="footer-link" id="github">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a href="#" class="footer-link" id="sharepoint">
-                        S P
+                    <a href="https://fiebedu.sharepoint.com/sites/SPORT" class="footer-link" id="sharepoint">
+                       <h4 class="sp">S P</h4>
                     </a>
                 </div>
             </div>
@@ -212,21 +231,20 @@
                     <h3>Products</h3>
                 </li>
                 <li>
-                    <a href="" class="footer-link">app</a>
+                    <a href="" class="footer-link">Camisetas</a>
                 </li>
                 <li>
-                    <a href="" class="footer-link">desktop</a>
+                    <a href="" class="footer-link">Acessórios</a>
                 </li>
                 <li>
-                    <a href="" class="footer-link">Cloud</a>
+                    <a href="" class="footer-link">Locais Esportivos</a>
                 </li>
             </ul>
             <div id="footer_subscribe">
                 <h3>subscribe</h3>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eum officia quod, veniam cupiditate
-                    similique molestias eligendi modi? Hic ducimus sunt voluptas provident saepe ipsa, consequatur atque
-                    culpa sit repellendus!
+                    Gostaria de receber promoções?<br>
+                    Digite seum e-mail
                 </p>
 
                 <div id="input_group">
@@ -244,6 +262,7 @@
             2023 all rights reserves
         </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/valid.js"></script>
 </body>
 

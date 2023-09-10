@@ -41,6 +41,9 @@ nav {
     height: 8vh;
 }
 
+.mob {
+    display: none;
+}
 
 .nav-list {
     list-style: none;

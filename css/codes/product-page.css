@@ -301,17 +301,18 @@
     }
 
     .mobile-pics-card {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(1px, 90px));
-        gap: 1rem;
-        margin: 0, 0, 0;
         display: flex;
+        gap: 5px;
         align-items: baseline;
-        justify-content: center;
         position: absolute;
         margin-top: 1rem;
-        width: 90%;
+        margin-left: -36px;
+        width: 100%;
         transition: all .40s;
+    }
+
+    .mobile-pics-card img{
+        width: 100%;
     }
 
 

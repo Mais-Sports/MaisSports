@@ -160,4 +160,11 @@ figure img{
     gap: 2rem;
   }
 
+  #footer_social_media {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
+
+}
+

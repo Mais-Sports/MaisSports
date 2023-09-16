@@ -12,9 +12,14 @@
 
 /* Codigo de formatação dos quadradinhos do size */
 .tamanhos {
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
+    grid-template-rows: 44px;
+    grid-column-gap: 0;
+    grid-row-gap: 19px;
     color: var(--cor-fonte3);
+    align-items: start;
+    justify-content: center;
 }
 
 .tam {
@@ -70,4 +75,18 @@
 
 .start-text span {
     color: var(--cor-fonte3);
+}
+@media screen and (min-width: 310px) and (max-width: 500px) {
+    .tamanhos {
+        display: grid;
+        grid-template-columns: repeat(2, 104px);
+        grid-template-rows: 31px;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .tamanhos h2 span{
+        font-size: 16px;
+    }
+    
 }

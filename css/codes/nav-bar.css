@@ -108,7 +108,8 @@ nav {
 
 @media (min-width: 320px) {
     .nav-list {
-        top: 16vh;
+        top: 7vh;
+        z-index: 2;
     }
 }
 

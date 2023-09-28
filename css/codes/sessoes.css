@@ -18,6 +18,8 @@ section {
 
 .main-home {
     width: 100%;
+    height: 100vh;
+    padding: 35px 35px;
 
     background-image: url(../../images/img-sec.jpg);
     background-position: right;

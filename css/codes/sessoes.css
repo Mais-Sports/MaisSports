@@ -13,20 +13,30 @@
 }
 
 section {
-    padding: 5% 10%;
+    padding: 2%;
 }
 
 .main-home {
     width: 100%;
-    height: 100vh;
-    padding: 35px 35px;
+    padding: 14px 287px 0px 318px;
+}
 
-    background-image: url(../../images/img-sec.jpg);
+.img-sec-pc {
+    width: 100%;
+    padding: 25px 25px;
     background-position: right;
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    z-index: 0;
+}
+
+.main-text {
+    width: 27%;
+    position: absolute;
+    top: 25%;
+    right: 16%;
 }
 
 .main-text h5 {
@@ -37,37 +47,42 @@ section {
 }
 
 .main-text h1 {
-    color: var(--cor-fonte2);
-    font-size: 65px;
+    color: var(--cor-fonte);
+    font-size: 36px;
     text-transform: capitalize;
     line-height: 1.1;
+    overflow: hidden;
     font-weight: 600;
     margin: 6px 0 10px;
 }
 
 .main-text p {
     color: var(--cor-fundo2);
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     margin-bottom: 20px;
 
 }
 
 .main-btn {
+    position: absolute;
+    margin-top: -14%;
+    right: 26%;
     display: inline-block;
-    color: var(--cor-fonte2);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: capitalize;
-    border: 2px solid var(--cor-fonte2);
+    border: 2px solid var(--cor-fonte);
+    color: #08a4fb;
     padding: 12px 25px;
     transition: all .42s ease;
 
 }
 
 .main-btn:hover {
-    background-color: var(--cor-fonte2);
-    color: var(--cor-fonte);
+    background-color: #08a4fb;
+    color: var(--cor-fonte2);
+    font-weight: bold;
 }
 
 .main-btn i {
@@ -76,26 +91,31 @@ section {
 
 .down-arrow {
     position: absolute;
-    top: 85%;
-    right: 11%;
+    top: 78%;
+    right: 28%;
 
 }
 
 .down i {
     font-size: 30px;
-    color: var(--cor-fonte2);
-    border: 2px solid var(--cor-fonte2);
+    color: var(--cor-fonte);
+    border: 2px solid var(--cor-fonte);
     border-radius: 50px;
     padding: 12px 12px;
-}
-
-.down i:hover {
-    background-color: var(--cor-fonte2);
-    color: var(--cor-fonte);
     transition: all .42s ease;
 }
 
-@media screen and (min-width: 320px) {
+.down i:hover {
+    background-color: #08a4fb;
+    color: var(--cor-fonte2);
+    transition: all .42s ease;
+}
+
+.img-sec-mob{
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
     .main-text {
         margin-top: -20rem;
     }
@@ -108,15 +128,25 @@ section {
     .main-btn {
         top: 10rem;
         display: inline-block;
-        color: var(--cor-fonte2);
+        color: #08a4fb;
         font-size: 16px;
         font-weight: 500;
         text-transform: capitalize;
-        border: 2px solid var(--cor-fonte2);
+        border: 2px solid #08a4fb;
         padding: 12px 25px;
         transition: all .42s ease;
 
     }
 
+    .img-sec-mob {
+        width: 100%;
+        padding: 25px 25px;
+        background-position: right;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        z-index: 0;
+    }
 
 }

@@ -73,7 +73,7 @@ nav {
     transition: 0.3s;
 }
 
-.mob-lg{
+button.mob-lg {
     display: none;
 }
 

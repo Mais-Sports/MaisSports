@@ -23,7 +23,7 @@
     margin-bottom: 30px;
 }
 
-.pow{
+.pow {
     position: relative;
     transition: all .40s;
     overflow: hidden;
@@ -71,6 +71,18 @@
         margin-left: 2rem;
         font-size: 12px;
     }
+
+    .categs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, auto));
+        gap: 2rem;
+        margin: 0, 0, 0;
+    }
+
+    .pow img{
+        padding: 35px;
+    }
+
 }
 
 @media screen and (min-width: 421px)and (max-width: 458px) {

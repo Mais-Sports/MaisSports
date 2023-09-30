@@ -74,21 +74,74 @@
         </div>
     </div>
     <section class="main-home">
-        <div class="main-text">
-            <h5>Chuteira Nike Zoom Superfly 9 Elite</h5>
-            <h1>Já Disponível</h1>
-            <p>A explosão de Kylian Mbappé, além de sua mudança de direção trêmula, o coloca firmemente na classe mundial de finalizadores.</p>
-        </div>
 
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="images/img-sec-pc-2.jpg" alt="slide 1">
+                <img class="img-mobile" src="images/img-sec-mob-2.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/img-sec.jpg" alt="slide 3">
+                <img class="img-mobile" src="images/img-sec-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/img-sec-pc-3.jpg" alt="slide 3">
+                <img class="img-mobile" src="images/img-sec-mob-3.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <script>
+
+            var radio = document.querySelector('.manual-btn')
+            var cont = 1
+
+            document.getElementById('radio1').checked = true
+
+            setInterval(() => {
+                proximaImg()
+            }, 5000)
+
+            function proximaImg() {
+                cont++
+
+                if (cont > 3) {
+                    cont = 1
+                }
+
+                document.getElementById('radio' + cont).checked = true
+            }
+        </script>
+
+        <!--
         <div class="down-arrow">
             <a href="#trending" class="down"><i class='bx bxs-chevron-down'></i></a>
         </div>
 
-        <img class="img-sec-mob" src="images/img-sec-mob.jpg" alt="">
+       <a href="#"><img class="img-sec-mob" src="images/img-sec-mob.jpg" alt=""></a>
 
-        <img class="img-sec-pc" src="images/img-sec.jpg" alt="">
+        <a href="#"><img class="img-sec-pc" src="images/img-sec.jpg" alt=""></a>
+-->
 
-        <a href="product-page.html" class="main-btn">Veja Agora <i class='bx bxs-chevron-right'></i></a>
+
     </section>
 
     <!-- Categorias -->
@@ -96,19 +149,20 @@
         <h2>Categorias</h2>
         <div class="categs">
             <div class="pow">
-                <img src="images/fute.jpeg" alt="basquete">
+                <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/557f22b1-6295-4a50-9f1a-8028b0798aa9___9818ab207d24c8dacd58a7aafc674909.jpg"
+                    alt="basquete">
             </div>
             <div class="pow">
-                <img src="images/basq.jpeg" alt="camisas de time">
+                <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/dd220500-8a90-4786-a305-36b83cf40c90___476061f2e85065a3d0c2dad84df4c503.jpg"
+                    alt="camisas de time">
             </div>
             <div class="pow">
-                <img src="images/vole.jpeg" alt="basquete">
+                <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/0f8c1f93-78c1-4a59-86ac-df364e821b9c___cc2ef81b3c001f7215ce11d1d9c2c32e.jpg"
+                    alt="basquete">
             </div>
             <div class="pow">
-                <img src="images/skat.jpeg" alt="basquete">
-            </div>
-            <div class="pow">
-                <img src="images/LOCAIS.png" alt="basquete">
+                <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/02b0ec2f-8694-4482-9f6e-bfdab924c048___cea7a85c8c0ebdf7e0b47aee80ce20bb.jpg"
+                    alt="basquete">
             </div>
         </div>
 

@@ -12,13 +12,98 @@
     --cor-fundo3: rgb(37, 37, 37);
 }
 
+/* Estilos do carrossel */
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+    padding: 35px;
+}
+
+.slide-box img{
+    width: 70%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid var(--cor-fonte2);
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: var(--cor-fundo2);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: var(--cor-fundo2);
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
 section {
     padding: 2%;
 }
 
 .main-home {
     width: 100%;
-    padding: 14px 287px 0px 318px;
+    padding: 0;
 }
 
 .img-sec-pc {
@@ -111,11 +196,21 @@ section {
     transition: all .42s ease;
 }
 
-.img-sec-mob{
+.img-sec-mob {
     display: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
+
+    .main-home {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .img-sec-pc {
+        display: none;
+    }
+
     .main-text {
         margin-top: -20rem;
     }
@@ -139,14 +234,17 @@ section {
     }
 
     .img-sec-mob {
-        width: 100%;
-        padding: 25px 25px;
-        background-position: right;
-        background-size: cover;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
         align-items: center;
         z-index: 0;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
     }
+
+    img.img-sec-mob {
+        width: 100%;
+    }
+
+
 
 }

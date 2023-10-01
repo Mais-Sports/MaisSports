@@ -57,7 +57,7 @@
             <ul class="nav-list">
                 <li><a href="login.html"><button class="mob-lg">Entrar</button></a></li>
                 <li><a href="login.html">Entrar</a></li>
-                <li><a href="/">Inicio</a></li>
+                <li><a href="search-page.html">Inicio</a></li>
                 <li><a href="/">Carrinho</a></li>
                 <li><a href="/">Locais Esportivos</a></li>
             </ul>
@@ -67,12 +67,13 @@
     <div class="box-2">
         <input type="checkbox" id="check-2">
         <div class="search-box-2">
-            <input type="text" placeholder="Pesquise aqui...">
+            <input id="search-input" type="text" placeholder="Pesquise aqui...">
             <label for="check-2" class="icon-2">
                 <i class='bx bx-search'></i>
             </label>
         </div>
     </div>
+    
     <section class="main-home">
 
         <div class="slider-content">
@@ -80,6 +81,7 @@
             <input type="radio" name="btn-radio" id="radio1">
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
 
             <div class="slide-box primeiro">
                 <img class="img-desktop" src="images/img-sec-pc-2.jpg" alt="slide 1">
@@ -92,20 +94,27 @@
             </div>
 
             <div class="slide-box">
-                <img class="img-desktop" src="images/img-sec-pc-3.jpg" alt="slide 3">
-                <img class="img-mobile" src="images/img-sec-mob-3.jpg" alt="slide 3">
+                <img class="img-desktop" src="images/img-sec-pc-3.jpg" alt="slide 4">
+                <img class="img-mobile" src="images/img-sec-mob-3.jpg" alt="slide 2">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/img-sec-pc-4.jpg" alt="slide 4">
+                <img class="img-mobile" src="images/img-sec-mob-4.jpg" alt="slide 4">
             </div>
 
             <div class="nav-auto">
                 <div class="auto-btn1"></div>
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
 
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
             </div>
 
         </div>
@@ -123,7 +132,7 @@
             function proximaImg() {
                 cont++
 
-                if (cont > 3) {
+                if (cont > 4) {
                     cont = 1
                 }
 
@@ -138,8 +147,8 @@
         <h2>Categorias</h2>
         <div class="categs">
             <div class="pow">
-                <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/557f22b1-6295-4a50-9f1a-8028b0798aa9___9818ab207d24c8dacd58a7aafc674909.jpg"
-                    alt="basquete">
+                <a href="soccer.html"><img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/557f22b1-6295-4a50-9f1a-8028b0798aa9___9818ab207d24c8dacd58a7aafc674909.jpg"
+                    alt="basquete"></a>
             </div>
             <div class="pow">
                 <img src="https://bayard.vtexassets.com/assets/vtex.file-manager-graphql/images/dd220500-8a90-4786-a305-36b83cf40c90___476061f2e85065a3d0c2dad84df4c503.jpg"

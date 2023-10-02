@@ -74,8 +74,7 @@ section.slider {
 #radio1:checked~.nav-auto .auto-btn1,
 #radio2:checked~.nav-auto .auto-btn2,
 #radio3:checked~.nav-auto .auto-btn3 
-#radio4:checked~.nav-auto .auto-btn4 
-#radio4:checked~.nav-auto .auto-btn5 {
+#radio4:checked~.nav-auto .auto-btn4 {
     background-color: var(--cor-fundo3);
 }
 

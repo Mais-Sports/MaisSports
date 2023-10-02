@@ -74,7 +74,8 @@ section.slider {
 #radio1:checked~.nav-auto .auto-btn1,
 #radio2:checked~.nav-auto .auto-btn2,
 #radio3:checked~.nav-auto .auto-btn3 
-#radio4:checked~.nav-auto .auto-btn4 {
+#radio4:checked~.nav-auto .auto-btn4 
+#radio4:checked~.nav-auto .auto-btn5 {
     background-color: var(--cor-fundo3);
 }
 
@@ -91,6 +92,9 @@ section.slider {
 }
 #radio4:checked~.primeiro {
     margin-left: -75%;
+}
+#radio4:checked~.primeiro {
+    margin-left: -100%;
 }
 
 section {

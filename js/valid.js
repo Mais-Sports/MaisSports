@@ -10,7 +10,6 @@ var pass_error = document.getElementById('pass_error');
 // senha.addEventListener('textInput', pass_Verify);
 
 function validated(){
-    alert(email.value.length )
     if(email.value.length < 8) {
         email.style.border = "1px solid red";
         email_error.style.display = "block";
@@ -21,17 +20,24 @@ function validated(){
         senha.style.border = "1px solid red";
         pass_error.style.display = "block";
         senha.focus();
-        return false;
+        return onload;
     }
 
     if((email.value.legth >= 8) && (senha.value.legth >= 5)){
-        email.style.border = "1px solid silver";
         email_error.style.display = "none";
-        return true;
+        return ;
     }
 
+}
 
+function clickLogin(){
+    let gotov = document.querySelectorAll(".buton");
+    gotov.forEach((button) => {
 
+        if(value.toUpperCase() == gotov.innerText.toUpperCase()) {
+            gotov.ClassList
+        })
+    })
 }
 // function email_Verify(){
 //     if (email.value.legth >= 8){

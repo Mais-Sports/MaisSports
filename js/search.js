@@ -104,6 +104,7 @@ for (let i of products.data) {
   container.appendChild(price);
   card.appendChild(container);
   document.getElementById("products").appendChild(card);
+
 }
 //Parâmetro passado do botão (parâmetro igual à categoria)
 

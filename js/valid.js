@@ -23,7 +23,7 @@ function validated(){
         return onload;
     }
 
-    if((email.value.legth >= 8) && (senha.value.legth >= 5)){
+    if((email.value.legth >= 8) && (senha.value.legth >= 8)){
         email_error.style.display = "none";
         return ;
     }

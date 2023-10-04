@@ -171,15 +171,20 @@
             <h1>REGISTRE-SE</h1>
             <form method="POST">
                 <h3 class="lr">Digite seu Nome</h3>
-                <input type="text" name="nome" placeholder="Digite seu nome" autofocus>
+                <input id="username" type="text" name="nome" placeholder="Digite seu nome" autofocus>
+
                 <h3 class="lr">Digite seu Sobrenome</h3>
                 <input type="text" name="sobrenome" placeholder="Digite seu sobrenome">
-                <h3 class="lr">Digite seu E-mail</h3>
+
+                <h3 id="email" class="lr">Digite seu E-mail</h3>
                 <input type="text" name="email" placeholder="Digite seu email" autofocus>
+
                 <h3 class="lr">Digite sua Senha</h3>
                 <input type="password" name="senha" placeholder="Digite sua senha">
+
                 <h3 class="lr">Digite novamente sua senha</h3>
-                <input type="password" name="senha" placeholder="Digite novamente a sua senha">
+                <input  id="password2" type="password" name="senha" placeholder="Digite novamente a sua senha">
+                
                 <input type="submit" value="Cadastrar">
             </form>
 

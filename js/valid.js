@@ -30,15 +30,7 @@ function validated(){
 
 }
 
-function clickLogin(){
-    let gotov = document.querySelectorAll(".buton");
-    gotov.forEach((button) => {
 
-        if(value.toUpperCase() == gotov.innerText.toUpperCase()) {
-            gotov.ClassList
-        })
-    })
-}
 // function email_Verify(){
 //     if (email.value.legth >= 8){
 //         email.style.border = "1px solid silver";

@@ -10,10 +10,20 @@
 
 .categs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-    gap: 2rem;
-    padding: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
+    gap: 3rem;
+    padding: 0;
     margin: 0, 0, 0;
+    height: 26rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.categories {
+    height: 50%;
+    margin-bottom: 5rem;
 }
 
 .categories h2 {

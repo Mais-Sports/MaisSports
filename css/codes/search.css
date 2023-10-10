@@ -42,18 +42,19 @@ body {
   margin-left: 1em;
   background-color: var(--cor-fundo3);
   color: #ffffff;
-  border-radius: 5px;
+  font-size: 15px;
+  border-radius: 15px;
   margin-top: 0.5em;
-  border: 1px solid var(--cor-fundo2);
+  border: 0;
 }
 
 .button-value {
-  border: 2px solid var(--cor-fundo2);
+  border: 0;
   padding: 1em 2.2em;
-  border-radius: 3em;
-  background-color: transparent;
-  color: #6759ff;
+  border-radius: 15px;
+  background-color: var(--cor-fundo3);
   cursor: pointer;
+  color: white;
 }
 
 .active {
@@ -105,6 +106,8 @@ img {
   align-items: center;
   justify-content: center;
   padding: 15px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 
@@ -123,5 +126,11 @@ img {
   #products {
     grid-template-columns: auto auto;
     grid-column-gap: 1em;
+  }
+
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
   }
 }

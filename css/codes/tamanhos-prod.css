@@ -13,10 +13,10 @@
 /* Codigo de formatação dos quadradinhos do size */
 .tamanhos {
     display: grid;
-    grid-template-columns: repeat(2, 155px);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: 44px;
     grid-column-gap: 0;
-    grid-row-gap: 19px;
+    grid-row-gap: 0px;
     color: var(--cor-fonte3);
     align-items: start;
     justify-content: center;

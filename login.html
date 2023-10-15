@@ -179,13 +179,16 @@
 
         <div class="login">
             <h1>LOGIN</h1>
-            <form class="login_form needs-validation" novalidate>
+            <form  onsubmit="()" class="login_form" novalidate>
+
                 <h3 class="lr">E-mail</h3>
-                <input autocomplete="off" type="text" name="email" placeholder="Digite seu E-mail" autofocus>
-                <div id="email_error">Please fill up your email or phone number</div>
+                <input id="email" type="text" name="email" placeholder="Digite seu E-mail" >
+                <div id="email_error">Por favor, digite seu e-mail ou seu número de telefoneq</div>
+
                 <h3 class="lr">Senha</h3>
-                <input type="password" name="senha" placeholder="Digite sua senha">
-                <div id="pass_error">Please fill up your password</div>
+                <input id="password" type="password" name="senha" placeholder="Digite sua senha">
+                <div id="pass_error">A senha esta incorreta! Digite novamente</div>
+
                 <input type="submit" value="Entrar">
             </form>
 
@@ -263,7 +266,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/valid.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

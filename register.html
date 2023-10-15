@@ -76,12 +76,16 @@
         .login {
             overflow: hidden;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             background-color: var(--cor-bar);
             width: 500px;
             height: 570px;
             padding: 35px;
+            margin-left: 40%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4rem;
+            border-radius: 25px;
         }
 
         .login form {
@@ -135,56 +139,62 @@
         .area-login p {
             overflow: hidden;
         }
+
+        section.area-login {
+            height: 100vh;
+        }
     </style>
 
-<header>
-    <nav>
-        <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
-        <div class="box">
-            <input type="checkbox" id="check">
-            <div class="search-box">
-                <input type="text" placeholder="Pesquise aqui...">
-                <label for="check" class="icon">
-                    <i class='bx bx-search'></i>
-                </label>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
+            <div class="box">
+                <input type="checkbox" id="check">
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquise aqui...">
+                    <label for="check" class="icon">
+                        <i class='bx bx-search'></i>
+                    </label>
+                </div>
             </div>
-        </div>
 
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
-        <ul class="nav-list">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/">Ajuda</a></li>
-            <li><a href="/">Sobre Nós</a></li>
-            <li><a class="mob" href="/">&#169
-                2023 all rights reserves</a></li>
-        </ul>
-    </nav>
-</header>
+            <ul class="nav-list">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Ajuda</a></li>
+                <li><a href="/">Sobre Nós</a></li>
+                <li><a class="mob" href="/">&#169
+                        2023 all rights reserves</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="area-login">
         <div class="login">
+
             <h1>REGISTRE-SE</h1>
-            <form method="POST">
+
+            <form role="form" onsubmit="singup()">
                 <h3 class="lr">Digite seu Nome</h3>
-                <input id="username" type="text" name="nome" placeholder="Digite seu nome" autofocus>
+                <input id="username" type="text" name="nome" placeholder="Digite seu nome" required>
 
                 <h3 class="lr">Digite seu Sobrenome</h3>
-                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome">
+                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
 
                 <h3 id="email" class="lr">Digite seu E-mail</h3>
-                <input type="text" name="email" placeholder="Digite seu email" autofocus>
+                <input type="text" name="email" placeholder="Digite seu email" required>
 
                 <h3 class="lr">Digite sua Senha</h3>
-                <input type="password" name="senha" placeholder="Digite sua senha">
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
 
                 <h3 class="lr">Digite novamente sua senha</h3>
-                <input  id="password2" type="password" name="senha" placeholder="Digite novamente a sua senha">
-                
+                <input id="password2" type="password" name="senha" placeholder="Digite novamente a sua senha" required>
+
                 <input type="submit" value="Cadastrar">
             </form>
 

@@ -102,40 +102,13 @@
             height: 45px;
             outline: none;
             border-radius: 8px;
+            width: 100%;
         }
 
         .login::placeholder {
             color: var(--cor-fonte2);
             font-size: 14px;
         }
-
-        form [type="submit"] {
-            display: block;
-            color: var(--cor-fonte);
-            background-color: var(--cor-fundo);
-            font-size: 20px;
-            text-transform: uppercase;
-            font-weight: bold;
-            cursor: pointer;
-
-        }
-
-        .login_form #email_error,
-        .login_form #pass_error {
-            margin-top: 5px;
-            width: 345px;
-            font-size: 15px;
-            color: #C62828;
-            background: rgb(255, 0, 0, 0.1);
-            text-align: center;
-            padding: 5px 8px;
-            border-radius: 3px;
-            border: 1px solid #EF9A9A;
-            display: none;
-        }
-
-
-
 
         .area-login a {
             color: var(--cor-fonte3);
@@ -146,6 +119,34 @@
         .area-login p {
             overflow: hidden;
             color: var(--cor-fonte2);
+        }
+
+        .form-group {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .botao {
+            height: 50px;
+            width: 80px;
+            border-radius: 5px;
+            background-color: var(--cor-fundo2);
+            color: var(--cor-fonte);
+            border: none;
+            cursor: pointer;
+        }
+
+        .text-center {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+        }
+
+        button#save-btn {
+            width: 80px;
+            height: 50px;
         }
     </style>
 
@@ -179,21 +180,28 @@
 
         <div class="login">
             <h1>LOGIN</h1>
-            <form  onsubmit="()" class="login_form" novalidate>
+            <form class="login_form" novalidate>
 
-                <h3 class="lr">E-mail</h3>
-                <input id="email" type="text" name="email" placeholder="Digite seu E-mail" >
-                <div id="email_error">Por favor, digite seu e-mail ou seu número de telefoneq</div>
+                <div class="form-group">
+                    <h3 class="lr">E-mail</h3>
+                    <label for="email"></label>
+                    <input id="email" type="text" name="email" placeholder="Digite seu E-mail" required>
+                </div>
 
-                <h3 class="lr">Senha</h3>
-                <input id="password" type="password" name="senha" placeholder="Digite sua senha">
-                <div id="pass_error">A senha esta incorreta! Digite novamente</div>
+                <div class="form-group">
+                    <h3 class="lr">Senha</h3>
+                    <label for="password"></label>
+                    <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                </div>
 
-                <input type="submit" value="Entrar">
+                <div class="text-center">
+                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save-btn">Entrar</button>
+                </div>
+
             </form>
 
             <p class="butun">Ainda não tem uma conta?<a href="register.html">Cadastre-se</a>.</p>
-        
+
         </div>
     </section>
 
@@ -266,7 +274,34 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/main.js"></script>
 </body>
+
+<script>
+    function saveData() {
+        let email, password;
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+
+        let user_records = new Array();
+        user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
+        if (user_records.some((v) => {
+            return v.email == email && v.password == password
+        })) {
+            alert("login successfull")
+            let current_user = user_records.filter((v) => {
+                return v.email == email && v.password == password
+            })[0]
+
+            localStorage.setItem("email", current_user.email);
+            localStorage.setItem("name", current_user.name);
+            window.location.href = "profile.html";
+
+        }
+        else {
+            alert("login fall");
+        }
+
+    }
+</script>
 
 </html>

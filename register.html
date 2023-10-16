@@ -127,7 +127,8 @@
             padding: 5px;
             overflow: hidden;
         }
-        .text-center{
+
+        .text-center {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -142,8 +143,23 @@
             border-radius: 15px;
         }
 
-        
-
+        @media screen and (min-width:320px) and (max-width:999px) {
+            .login {
+                overflow: hidden;
+                display: flex;
+                background-color: var(--cor-bar);
+                width: 370px;
+                height: auto;
+                padding: 35px;
+                margin-left: 40%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 4rem;
+                margin-left: 1rem;
+                border-radius: 25px;
+            }
+        }
     </style>
 
     <header>
@@ -283,26 +299,26 @@
 </body>
 
 <script>
-    function saveData(){
+    function saveData() {
         let name, email, password;
         name = document.getElementById("name").value;
         email = document.getElementById("email").value;
         password = document.getElementById("password").value;
 
         let user_records = new Array();
-        user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
-        if(user_records.some((v)=>{
-            return v.email==email
-        })){
+        user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
+        if (user_records.some((v) => {
+            return v.email == email
+        })) {
             alert("Casdastrado com sucesso! Vá para a pagina de login para acessar seu perfil!");
         }
-        else{
+        else {
             user_records.push({
-                "name":name,
-                "email":email,
-                "password":password
+                "name": name,
+                "email": email,
+                "password": password
             })
-            localStorage.setItem("users",JSON.stringify(user_records));
+            localStorage.setItem("users", JSON.stringify(user_records));
         }
 
 

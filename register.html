@@ -56,7 +56,13 @@
             --cor-fundo3: rgba(26, 52, 137, 0.753);
         }
 
-
+        .area-login {
+            margin-top: -50px;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
 
         h1 {
             color: var(--cor-fonte2);
@@ -64,29 +70,35 @@
             text-transform: capitalize;
             text-align: center;
             overflow: hidden;
-            padding: 15px;
         }
 
         h3 {
             color: var(--cor-fonte2);
             text-align: start;
-            overflow: hidden;
             font-size: 20px;
         }
 
+        h3 .lr {
+            margin-top: 10px;
+        }
+
         .login {
-            overflow: hidden;
             display: flex;
-            background-color: var(--cor-bar);
-            width: 500px;
-            height: auto;
-            padding: 35px;
-            margin-left: 40%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 4rem;
-            border-radius: 25px;
+            background-color: var(--cor-bar);
+            border-radius: 10px;
+            width: 490px;
+            height: 415px;
+            padding: 35px;
+        }
+
+        section.area-login {
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+            display: flex;
         }
 
         .login form {
@@ -96,11 +108,12 @@
         }
 
         .login input {
+            margin-top: 10px;
             border: none;
             height: 45px;
             outline: none;
+            border-radius: 8px;
             width: 100%;
-            border-radius: 12px;
         }
 
         .login::placeholder {
@@ -110,15 +123,14 @@
 
         .area-login a {
             color: var(--cor-fonte3);
+            text-decoration: none;
+            margin-left: 10px;
         }
 
         .area-login p {
             overflow: hidden;
-            padding: 15px;
-        }
-
-        section.area-login {
-            height: 100vh;
+            color: var(--cor-fonte2);
+            height: 60px;
         }
 
         .form-group {
@@ -128,36 +140,30 @@
             overflow: hidden;
         }
 
+        .botao {
+            height: 50px;
+            width: 80px;
+            border-radius: 5px;
+            background-color: var(--cor-fundo2);
+            color: var(--cor-fonte);
+            border: none;
+            cursor: pointer;
+        }
+
         .text-center {
             width: 100%;
             display: flex;
             justify-content: center;
+            height: 10rem;
         }
 
-        button#save_btn {
+        button#save-btn {
             width: 150px;
             height: 40px;
             background: var(--cor-fundo);
             color: var(--cor-fonte);
             border: none;
             border-radius: 15px;
-        }
-
-        @media screen and (min-width:320px) and (max-width:999px) {
-            .login {
-                overflow: hidden;
-                display: flex;
-                background-color: var(--cor-bar);
-                width: 320px;
-                height: auto;
-                padding: 35px;
-                margin-left: 1rem;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-top: 4rem;
-                border-radius: 25px;
-            }
         }
     </style>
 
@@ -191,37 +197,41 @@
     </header>
 
     <section class="area-login">
-        <div class="login">
 
-            <h1>REGISTRE-SE</h1>
+        <div class="sub-og">
+            <div class="login">
 
-            <form>
-                <div class="form-group">
-                    <h3 class="lr">Digite seu nome completo</h3>
-                    <label for="name"></label>
-                    <input id="name" type="text" name="nome" placeholder="Digite seu nome" required>
-                </div>
+                <h1>REGISTRE-SE</h1>
 
-                <div class="form-group">
-                    <h3 class="lr">Digite seu E-mail</h3>
-                    <label for="email"></label>
-                    <input id="email" type="text" name="email" placeholder="Digite seu email" required>
-                </div>
+                <form>
+                    <div class="form-group">
+                        <h3 class="lr">Digite seu nome completo</h3>
+                        <label for="name"></label>
+                        <input id="name" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
 
-                <div class="form-group">
-                    <h3 class="lr">Digite sua Senha</h3>
-                    <label for="password"></label>
-                    <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
-                </div>
+                    <div class="form-group">
+                        <h3 class="lr">Digite seu E-mail</h3>
+                        <label for="email"></label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu email" required>
+                    </div>
 
-                <div class="text-center">
-                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn">Cadastrar</button>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <h3 class="lr">Digite sua Senha</h3>
+                        <label for="password"></label>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
 
-            <p>Já tem uma conta?<a href="login.html">Faça Login</a>.</p>
+                    <div class="text-center">
+                        <button type="button" onclick="saveData()" class="btn btn-primary"
+                            id="save_btn">Cadastrar</button>
+                    </div>
+                </form>
+
+                <p>Já tem uma conta?<a href="login.html">Faça Login</a>.</p>
 
 
+            </div>
         </div>
     </section>
 

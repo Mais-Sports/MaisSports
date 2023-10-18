@@ -1,0 +1,4 @@
+.account {
+    grid-template-columns: repeat(auto-fill, minmax(auto, 384rem));
+    place-content: center;
+}

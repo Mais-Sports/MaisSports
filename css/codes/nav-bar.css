@@ -74,6 +74,27 @@ nav {
     transition: 0.3s;
 }
 
+.sair-btn button{
+    display: inline-flex;
+    color: var(--cor-fonte);
+    background-color: var(--cor-fundo2);
+    border: 1px solid var(--cor-fundo2);
+    border-radius: 15px;
+    padding: 10px 5px;
+    width: 70px;
+    transition: all .42s ease;
+}
+
+.sair-btn button:hover{
+    color: var(--cor-fundo2);
+    background-color: var(--cor-fonte);
+    transition: 0.5 ease;
+}
+
+i.bi.bi-person {
+    width: 95%;
+}
+
 
 .mob-og{
     display: none;
@@ -82,6 +103,18 @@ nav {
 a.pc-og {
     display: block;
 }
+
+.login-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 999px) {
     body {
@@ -136,6 +169,27 @@ a.pc-og {
     }
     .pc-og{
         display: none;
+    }
+
+    .sair-btn button{
+        display: inline-flex;
+        color: var(--cor-fonte);
+        background-color: var(--cor-fundo2);
+        border: 1px solid var(--cor-fundo2);
+        border-radius: 15px;
+        padding: 10px 5px;
+        width: 70px;
+        transition: all .42s ease;
+    }
+    
+    .sair-btn button:hover{
+        color: var(--cor-fundo2);
+        background-color: var(--cor-fonte);
+        transition: 0.5 ease;
+    }
+    
+    i.bi.bi-person {
+        width: 95%;
     }
 }
 

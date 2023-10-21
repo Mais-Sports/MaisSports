@@ -155,6 +155,9 @@
                 </ul>
             </div>
             <div class="nog">
+
+                <div class="aviso-card"></div>
+
                 <h2>SERVIÇOS</h2>
                 <ul class="desc">
                     <li>
@@ -164,6 +167,22 @@
                 </ul>
             </div>
         </div>
+
+        <script>
+            if (localStorage.getItem("name") == null) {
+
+                    const accountSec = document.querySelector(".account");
+                    accountSec.style.display = "none";
+
+                } else {
+                    document.write(localStorage.getItem("name"));
+
+                    const accountSec = document.querySelector(".account");
+                    accountSec.style.display = "block";
+
+                }
+        </script>
+
         </div>
     </section>
 

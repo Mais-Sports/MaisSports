@@ -94,6 +94,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+            height: 100%;
         }
 
         .login input {
@@ -153,7 +154,6 @@
             border: none;
             border-radius: 15px;
         }
-
     </style>
 
     <header>
@@ -191,16 +191,16 @@
                 <div class="form-group">
                     <h3 class="lr">E-mail</h3>
                     <label for="email"></label>
-                    <input id="email" type="text" name="email" placeholder="Digite seu E-mail" required>
+                    <input id="email" type="text" name="email" placeholder="Digite seu E-mail" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                 </div>
 
                 <div class="form-group">
                     <h3 class="lr">Senha</h3>
                     <label for="password"></label>
-                    <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                    <input id="password" type="password" name="senha" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*]).{8,} required>
                 </div>
 
-                <div class="text-center">
+                <div class=" text-center">
                     <button type="button" onclick="saveData()" class="btn btn-primary" id="save-btn">Entrar</button>
                 </div>
 

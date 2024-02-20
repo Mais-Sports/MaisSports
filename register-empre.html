@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/codes/categorias.css">
     <link rel="stylesheet" href="css/codes/footer.css">
     <link rel="stylesheet" href="css/codes/nav-bar.css">
-    <link rel="stylesheet" href="css/codes/register.css">
+    <link rel="stylesheet" href="css/codes/register-empre.css">
 
     <!-- Others Links -->
 
@@ -35,7 +35,6 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <a class="logo" href="index.html"><img src="images/LOGO.png"></a>
@@ -74,19 +73,24 @@
 
                 <form>
                     <div class="form-group">
-                        <h3 class="lr">Digite seu nome completo</h3>
+                        <h3 class="lr">Digite nome da Empresas</h3>
                         <label for="name"></label>
                         <input id="name" type="text" name="nome" placeholder="Digite seu nome" required>
                     </div>
 
                     <div class="form-group">
-                        <h3 class="lr">Digite seu E-mail</h3>
+                        <h3 class="lr">Digite o E-mail corporativo</h3>
                         <label for="email"></label>
                         <input id="email" type="text" name="email" placeholder="Digite seu email" required>
                     </div>
 
                     <div class="form-group">
-                        <h3 class="lr">Digite sua Senha</h3>
+                        <h3 class="lr">Digite o CNPJ da empresa</h3>
+                        <label for="CNPJ"></label>
+                        <input id="cnpj" type="cnpj" name="cnpj" placeholder="Digite o CNPJ" required>
+                    </div>
+                    <div class="form-group">
+                        <h3 class="lr">Digite a Senha</h3>
                         <label for="password"></label>
                         <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
@@ -97,7 +101,8 @@
                     </div>
                 </form>
 
-                <p>Já tem uma conta?<a href="login.html">Faça Login</a>.</p>
+
+                <p>Já tem uma conta?<a href="login-empre.html">Faça Login</a>.</p>
 
 
             </div>
